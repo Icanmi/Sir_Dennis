@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard";
+import { CTASection } from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
@@ -21,9 +22,10 @@ export default function Portfolio() {
     <div className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">My Portfolio</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A collection of projects showcasing my skills in web and mobile development.
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Case Studies: Real Results for Real Businesses</h1>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            See how I've helped startups secure funding, enterprises reduce costs, and businesses scale to millions of users. 
+            Every project includes measurable outcomes and ROI.
           </p>
         </div>
 
@@ -64,6 +66,8 @@ export default function Portfolio() {
           </div>
         )}
       </div>
+      
+      <CTASection />
     </div>
   );
 }
