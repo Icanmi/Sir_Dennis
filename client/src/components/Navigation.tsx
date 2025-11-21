@@ -20,12 +20,10 @@ export function Navigation() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="/">
-            <a className="text-xl font-bold hover-elevate active-elevate-2 px-2 py-1 rounded-md" data-testid="link-logo">
-              <span className="font-mono text-primary">&lt;</span>
-              DevPortfolio
-              <span className="font-mono text-primary">/&gt;</span>
-            </a>
+          <Link href="/" className="text-xl font-bold hover-elevate active-elevate-2 px-2 py-1 rounded-md" data-testid="link-logo">
+            <span className="font-mono text-primary">&lt;</span>
+            DevPortfolio
+            <span className="font-mono text-primary">/&gt;</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
