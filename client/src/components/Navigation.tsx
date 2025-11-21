@@ -6,10 +6,10 @@ import { useState } from "react";
 
 const navLinks = [
   { path: "/", label: "Home" },
-  { path: "/portfolio", label: "Portfolio" },
-  { path: "/resume", label: "Resume" },
-  { path: "/blog", label: "Blog" },
-  { path: "/youtube", label: "YouTube" },
+  { path: "/portfolio", label: "Case Studies" },
+  { path: "/resume", label: "Expertise" },
+  { path: "/blog", label: "Insights" },
+  { path: "/youtube", label: "Videos" },
 ];
 
 export function Navigation() {

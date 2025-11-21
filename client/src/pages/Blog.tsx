@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { BlogPost } from "@shared/schema";
 
-const categories = ["All", "Development", "Growth", "Wealth Creation"];
+const categories = ["All", "Business Strategy", "Technical Leadership", "Performance"];
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -21,9 +21,9 @@ export default function Blog() {
     <div className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Technical Insights & Business Strategy</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Insights on development, personal growth, and wealth creation
+            Proven strategies and lessons learned from building applications that drive real business results. Learn what works.
           </p>
         </div>
 

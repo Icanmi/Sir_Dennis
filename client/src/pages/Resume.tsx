@@ -75,13 +75,13 @@ export default function Resume() {
     <div className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Resume</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Expertise & Track Record</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Professional experience and qualifications
+            5+ years delivering high-impact technical solutions that drive growth, reduce costs, and scale to millions of users.
           </p>
           <Button size="lg" data-testid="button-download-resume">
             <Download className="w-4 h-4 mr-2" />
-            Download PDF
+            Download Full Resume
           </Button>
         </div>
 

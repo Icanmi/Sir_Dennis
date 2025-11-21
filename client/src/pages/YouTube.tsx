@@ -11,9 +11,9 @@ export default function YouTube() {
     <div className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">YouTube Gallery</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Video Resources & Tutorials</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Watch my latest tutorials and insights on development and growth
+            In-depth tutorials on building scalable applications, technical leadership, and proven strategies that deliver results.
           </p>
         </div>
 
