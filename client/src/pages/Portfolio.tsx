@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { PortfolioProject } from "@shared/schema";
 
-const categories = ["All", "Web Application", "Mobile App"];
+const categories = ["All", "Blockchain", "Web Application", "Mobile App"];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("All");

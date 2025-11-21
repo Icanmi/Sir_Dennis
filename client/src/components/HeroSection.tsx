@@ -33,7 +33,7 @@ export function HeroSection() {
           I Build Apps That Generate Revenue & Drive Growth
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-          Full-stack developer who's delivered <span className="font-bold text-white">$2M+ in measurable value</span> through scalable applications, helping startups reach Series A and enterprises scale to millions of users.
+          Full-stack & Web3 developer who's delivered <span className="font-bold text-white">$2M+ in measurable value</span> through scalable applications and blockchain solutions. Hackathon winner and expert in building startups that reach Series A and scale to millions of users.
         </p>
 
         <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-2xl mx-auto">

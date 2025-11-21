@@ -56,18 +56,19 @@ const education = [
 ];
 
 const certifications = [
+  "🏆 BlockDAG Network Hackathon Winner",
   "AWS Certified Solutions Architect",
   "Google Cloud Professional Developer",
   "Meta React Developer Professional",
-  "MongoDB Certified Developer",
+  "Blockchain Developer Certified",
 ];
 
 const skills = {
+  "Blockchain": ["Solidity", "Web3.js", "Ethers.js", "Smart Contracts", "DAG"],
   "Frontend": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"],
   "Backend": ["Node.js", "Python", "Express", "FastAPI", "GraphQL"],
   "Database": ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
   "DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions"],
-  "Tools": ["Git", "VS Code", "Figma", "Postman", "Jira"],
 };
 
 export default function Resume() {

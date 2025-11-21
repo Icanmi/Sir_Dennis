@@ -6,15 +6,17 @@ const skills = [
   "React",
   "TypeScript",
   "Node.js",
-  "Python",
+  "Solidity",
+  "Web3.js",
+  "Ethers.js",
+  "Smart Contracts",
+  "Blockchain",
   "PostgreSQL",
   "Tailwind CSS",
   "Next.js",
-  "Express",
+  "Python",
   "Docker",
   "AWS",
-  "GraphQL",
-  "MongoDB",
 ];
 
 export function AboutSection() {
@@ -27,7 +29,7 @@ export function AboutSection() {
             <div className="space-y-4 text-base md:text-lg text-muted-foreground">
               <p>
                 I don't just write code - <span className="font-semibold text-foreground">I solve business problems that directly impact your bottom line</span>. 
-                Over 5 years, I've helped companies increase revenue, reduce costs, and scale to millions of users through strategic technical solutions.
+                Over 5 years, I've helped companies increase revenue, reduce costs, and scale to millions of users through strategic technical solutions, including cutting-edge blockchain and Web3 applications.
               </p>
               <p>
                 <span className="font-semibold text-foreground">My track record speaks for itself:</span> I've delivered 50+ projects that generated $2M+ in measurable value, 

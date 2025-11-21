@@ -3,6 +3,16 @@ import type { InsertPortfolioProject, InsertBlogPost, InsertYoutubeVideo } from 
 
 const portfolioProjects: any[] = [
   {
+    title: "BlockDAG DApp - Hackathon Winner 🏆",
+    description: "Won BlockDAG Network hackathon by building a decentralized application leveraging DAG technology for ultra-fast transactions. Implemented smart contracts with advanced consensus mechanisms, achieving 10,000+ TPS with sub-second finality.",
+    results: "🏆 Hackathon Winner • 10K+ TPS achieved • Sub-second finality • Advanced smart contract architecture • Scalable DAG implementation",
+    imageUrl: "/assets/generated_images/Web_app_project_screenshot_bd2f72f3.png",
+    technologies: ["Solidity", "Web3.js", "Ethers.js", "React", "TypeScript", "Smart Contracts", "DAG", "Blockchain"],
+    githubUrl: "https://github.com/example/blockdag",
+    liveUrl: "https://example-blockdag.com",
+    category: "Blockchain",
+  },
+  {
     title: "FinTech Payment Platform - Series A Success",
     description: "Built investor-ready MVP that secured $3M Series A funding. Scalable payment processing platform handling $2M+ in monthly transactions with 99.9% uptime. Features real-time fraud detection, multi-currency support, and instant settlements.",
     results: "Helped secure $3M Series A • Processing $2M+/month • 50K+ active users • 99.9% uptime • 35% faster than competitors",
