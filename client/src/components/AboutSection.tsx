@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import aboutImage from "@assets/generated_images/Professional_developer_headshot_2b2eaffc.png";
+import aboutImage from "@assets/Data cleaning_1764294835751.png";
 
 const skills = [
   "React",
