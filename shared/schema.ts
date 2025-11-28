@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { pgTable, text, varchar, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -7,6 +7,17 @@ export const users = pgTable("users", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   username: text("username").notNull().unique(),
   password: text("password").notNull(),
+});
+
+export const contactSubmissions = pgTable("contact_submissions", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  company: text("company"),
+  budget: text("budget"),
+  message: text("message").notNull(),
+  isRead: boolean("is_read").default(false),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
 export const portfolioProjects = pgTable("portfolio_projects", {
@@ -58,11 +69,26 @@ export const insertYoutubeVideoSchema = createInsertSchema(youtubeVideos).omit({
   id: true,
 });
 
+export const insertContactSubmissionSchema = createInsertSchema(contactSubmissions).omit({
+  id: true,
+  createdAt: true,
+  isRead: true,
+});
+
+export const updatePortfolioProjectSchema = insertPortfolioProjectSchema.partial();
+export const updateBlogPostSchema = insertBlogPostSchema.partial();
+export const updateYoutubeVideoSchema = insertYoutubeVideoSchema.partial();
+
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 export type PortfolioProject = typeof portfolioProjects.$inferSelect;
 export type InsertPortfolioProject = z.infer<typeof insertPortfolioProjectSchema>;
+export type UpdatePortfolioProject = z.infer<typeof updatePortfolioProjectSchema>;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
+export type UpdateBlogPost = z.infer<typeof updateBlogPostSchema>;
 export type YoutubeVideo = typeof youtubeVideos.$inferSelect;
 export type InsertYoutubeVideo = z.infer<typeof insertYoutubeVideoSchema>;
+export type UpdateYoutubeVideo = z.infer<typeof updateYoutubeVideoSchema>;
+export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type InsertContactSubmission = z.infer<typeof insertContactSubmissionSchema>;
