@@ -29,6 +29,10 @@ export function HeroSection() {
           ✓ Available for High-Impact Projects
         </Badge>
         
+        <p className="text-lg md:text-xl text-white/90 mb-4 font-medium">
+          Math Tutor | Data Analyst | Forex & Crypto Trader | Web3 Developer | Full-Stack Web Developer
+        </p>
+        
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
           I Build Apps That Generate Revenue & Drive Growth
         </h1>
