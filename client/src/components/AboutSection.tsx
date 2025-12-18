@@ -1,22 +1,28 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Rocket, TrendingUp, DollarSign, Target } from "lucide-react";
 import aboutImage from "@assets/Data cleaning_1764294835751.png";
 
 const skills = [
-  "React",
+  "React 18",
   "TypeScript",
   "Node.js",
-  "Solidity",
+  "Python",
+  "Java",
+  "Django",
+  "SQL",
+  "AWS",
+  "AI",
+  "Machine Learning",
+  "Deep Learning",
+  "Neural Networks",
+  "Power BI",
+  "Tableau",
+  "Excel",
   "Web3.js",
-  "Ethers.js",
   "Smart Contracts",
   "Blockchain",
-  "PostgreSQL",
-  "Tailwind CSS",
-  "Next.js",
-  "Python",
   "Docker",
-  "AWS",
 ];
 
 export function AboutSection() {
@@ -48,22 +54,22 @@ export function AboutSection() {
               <h3 className="text-2xl font-semibold mb-4">What You Get</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="p-6 hover-elevate border-l-4 border-l-primary">
-                  <div className="text-primary text-2xl mb-2">🚀</div>
+                  <Rocket className="text-primary w-6 h-6 mb-2" />
                   <h4 className="font-semibold mb-1">Fast Time-to-Market</h4>
                   <p className="text-sm text-muted-foreground">MVPs in 4-8 weeks, features in days not months</p>
                 </Card>
                 <Card className="p-6 hover-elevate border-l-4 border-l-primary">
-                  <div className="text-primary text-2xl mb-2">📈</div>
+                  <TrendingUp className="text-primary w-6 h-6 mb-2" />
                   <h4 className="font-semibold mb-1">Scalable Architecture</h4>
                   <p className="text-sm text-muted-foreground">Built to handle growth from day one</p>
                 </Card>
                 <Card className="p-6 hover-elevate border-l-4 border-l-primary">
-                  <div className="text-primary text-2xl mb-2">💰</div>
+                  <DollarSign className="text-primary w-6 h-6 mb-2" />
                   <h4 className="font-semibold mb-1">Cost Optimization</h4>
                   <p className="text-sm text-muted-foreground">Average 40% reduction in infrastructure costs</p>
                 </Card>
                 <Card className="p-6 hover-elevate border-l-4 border-l-primary">
-                  <div className="text-primary text-2xl mb-2">🎯</div>
+                  <Target className="text-primary w-6 h-6 mb-2" />
                   <h4 className="font-semibold mb-1">Business-First Approach</h4>
                   <p className="text-sm text-muted-foreground">Every technical decision drives ROI</p>
                 </Card>
