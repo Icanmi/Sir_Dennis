@@ -12,8 +12,12 @@ import {
 } from "@shared/schema";
 import { ZodError } from "zod";
 
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin123";
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+
+if (!ADMIN_USERNAME || !ADMIN_PASSWORD) {
+  console.warn("WARNING: ADMIN_USERNAME and ADMIN_PASSWORD environment variables not set. Admin login will be disabled.");
+}
 
 function requireAdmin(req: Request, res: Response, next: NextFunction) {
   if ((req.session as any)?.isAdmin) {
@@ -26,6 +30,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Admin Authentication Routes
   app.post("/api/admin/login", async (req, res) => {
     try {
+      if (!ADMIN_USERNAME || !ADMIN_PASSWORD) {
+        return res.status(503).json({ error: "Admin login is not configured. Please set ADMIN_USERNAME and ADMIN_PASSWORD environment variables." });
+      }
+      
       const { username, password } = req.body;
       
       if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {

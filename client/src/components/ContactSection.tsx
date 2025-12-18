@@ -50,8 +50,8 @@ export function ContactSection() {
         <div className="text-center mt-8 pt-8 border-t">
           <p className="text-sm text-muted-foreground mb-3">Or reach out directly:</p>
           <p className="text-base">
-            <a href="mailto:your.email@example.com" className="text-primary hover:underline font-medium">
-              your.email@example.com
+            <a href="mailto:denniswillie02@gmail.com" className="text-primary hover:underline font-medium" data-testid="link-contact-email">
+              denniswillie02@gmail.com
             </a>
           </p>
         </div>

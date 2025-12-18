@@ -48,7 +48,7 @@ export function ContactForm() {
     } catch (error) {
       toast({
         title: "Failed to send message",
-        description: "Please try again or contact me directly at your-email@example.com",
+        description: "Please try again or contact me directly via the email below.",
         variant: "destructive",
       });
     } finally {
