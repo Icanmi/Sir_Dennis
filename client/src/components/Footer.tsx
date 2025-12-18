@@ -9,12 +9,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold text-lg mb-4">
-              <span className="font-mono text-primary">&lt;</span>
-              DevPortfolio
-              <span className="font-mono text-primary">/&gt;</span>
+              Dennis Willie
             </h3>
             <p className="text-muted-foreground">
-              Building innovative digital solutions with passion and expertise.
+              Full-stack developer, Web3 innovator, and business-focused problem solver. Helping startups and enterprises scale through technology and blockchain solutions.
             </p>
           </div>
 

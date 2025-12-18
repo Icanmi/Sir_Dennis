@@ -7,9 +7,9 @@ export function ContactSection() {
     <section id="contact" className="py-16 md:py-24 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Work Together - I'm Ready When You Are</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's discuss how I can help you achieve your business goals. Free 30-minute consultation included.
+            Whether you need an MVP, scaling solutions, or blockchain integration, Dennis Willie is here to turn your vision into revenue-generating reality. Free 30-minute strategy call included.
           </p>
         </div>
 

@@ -21,9 +21,7 @@ export function Navigation() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="text-xl font-bold hover-elevate active-elevate-2 px-2 py-1 rounded-md" data-testid="link-logo">
-            <span className="font-mono text-primary">&lt;</span>
-            DevPortfolio
-            <span className="font-mono text-primary">/&gt;</span>
+            <span className="text-primary font-semibold">Dennis Willie</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

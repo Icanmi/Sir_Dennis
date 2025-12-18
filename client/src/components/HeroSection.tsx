@@ -29,13 +29,17 @@ export function HeroSection() {
           ✓ Available for High-Impact Projects
         </Badge>
         
-        <p className="text-lg md:text-xl text-white/90 mb-4 font-medium">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
+          Dennis Willie
+        </h1>
+        
+        <p className="text-lg md:text-xl text-white/90 mb-6 font-medium">
           Math Tutor | Data Analyst | Forex & Crypto Trader | Web3 Developer | Full-Stack Web Developer
         </p>
         
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
           I Build Apps That Generate Revenue & Drive Growth
-        </h1>
+        </h2>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
           Full-stack & Web3 developer who's delivered <span className="font-bold text-white">$2M+ in measurable value</span> through scalable applications and blockchain solutions. Hackathon winner and expert in building startups that reach Series A and scale to millions of users.
         </p>

@@ -25,6 +25,9 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
+            <div className="mb-4">
+              <Badge className="mb-3">ABOUT DENNIS WILLIE</Badge>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">What I Do for Your Business</h2>
             <div className="space-y-4 text-base md:text-lg text-muted-foreground">
               <p>
