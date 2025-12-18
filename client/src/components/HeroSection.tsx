@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ChevronDown, TrendingUp, Users, DollarSign } from "lucide-react";
-import heroImage from "@assets/generated_images/Developer_workspace_hero_image_6bd143e5.png";
+import heroImage from "@assets/stage_1766084502983.jpg";
 
 export function HeroSection() {
   const scrollToAbout = () => {
