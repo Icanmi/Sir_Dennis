@@ -91,17 +91,20 @@ The application is configured to use PostgreSQL through Drizzle ORM, though curr
 
 ### Authentication and Authorization
 
-**Current State**: No authentication implemented
+**Current State**: Admin authentication implemented with session-based login
 
-**Prepared Infrastructure**:
-- User table exists in schema with username/password fields
-- Session storage configured via `connect-pg-simple` for PostgreSQL sessions
-- Storage interface includes user lookup methods (`getUser`, `getUserByUsername`, `createUser`)
+**Security Features**:
+- Admin credentials stored securely via `ADMIN_USERNAME` and `ADMIN_PASSWORD` environment variables
+- Session secret required via `SESSION_SECRET` environment variable (mandatory in production)
+- Cookies configured with `httpOnly`, `secure` (in production), and `sameSite: strict`
+- Rate limiting on login endpoint: 5 attempts per 15 minutes
+- General API rate limiting: 100 requests per minute
+- Security headers via Helmet with Content Security Policy in production
 
-**Future Implementation Path**:
-- Password hashing (likely bcrypt or argon2)
-- Session-based authentication using Express sessions
-- Protected API routes for content management
+**Environment Variables Required**:
+- `SESSION_SECRET` - Required in production for session encryption
+- `ADMIN_USERNAME` - Admin login username
+- `ADMIN_PASSWORD` - Admin login password
 
 ### External Dependencies
 
